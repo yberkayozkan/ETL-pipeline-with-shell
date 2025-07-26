@@ -22,11 +22,11 @@ while [ "$CURRENT_URL" != "null" ]; do
   echo "[Sayfa $PAGE_NUMBER] Çekiliyor: $CURRENT_URL"
   
   # Extract: Veriyi geçici bir dosyaya çek.
-  bash 1_extract.sh "$CURRENT_URL" "$TEMP_JSON_FILE"
+  source 1_extract.sh "$CURRENT_URL" "$TEMP_JSON_FILE"
   
   # Transform: Geçici dosyayı işle ve CSV'ye ekle.
   # 'bash 2_transform.sh' komutunun çıktısını (yeni URL) yakala.
-  NEXT_URL=$(bash 2_transform.sh "$TEMP_JSON_FILE" "$PROCESSED_FILE")
+  NEXT_URL=$(source 2_transform.sh "$TEMP_JSON_FILE" "$PROCESSED_FILE")
   
   # Bir sonraki döngü için URL'i güncelle.
   CURRENT_URL="$NEXT_URL"
