@@ -11,3 +11,5 @@ PROCESSED_DATA_DIR="data/processed"
 # Dosya isimleri (Sadece ana CSV dosyası için)
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 PROCESSED_FILE="$PROCESSED_DATA_DIR/characters_$TIMESTAMP.csv"
+# Rapor dosyası
+REPORT_FILE="$PROCESSED_DATA_DIR/etl_report_$TIMESTAMP.txt"
