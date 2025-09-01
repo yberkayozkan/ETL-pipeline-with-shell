@@ -57,7 +57,5 @@ Bu komut `config.sh`'i okur, `data/raw` ve `data/processed` dizinlerini oluştur
 - Mevcut CSV'ye ekleme yapıldığı için daha önce oluşturulmuş bir `PROCESSED_FILE` üzerine dikkat: `run_etl.sh` varsayılan olarak yeni bir isimle (zaman damgası) dosya oluşturur.
 - Küçük iyileştirmeler: yeniden başlatma (resume) desteği, paralel indirme veya daha sağlam hata denemeleri eklenebilir.
 
-## İletişim
 
-Bu README proje köküne otomatik olarak eklendi. Değişiklik isterseniz hangi bölümü güncellememi istediğinizi belirtin.
 >>>>>>> b0c7617 (Create README.md)
